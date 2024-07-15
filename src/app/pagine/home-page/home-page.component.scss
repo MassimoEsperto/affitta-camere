@@ -1,0 +1,51 @@
+.elementor-background-overlay, .elementor-background-slideshow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    .swiper-slide-inner {
+        padding: 30px;
+    }
+}
+
+ .elementor-slide-heading {
+    font-family: "Cinzel", Sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+ .swiper-slide-inner .elementor-slide-heading:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+ .swiper-slide-inner .elementor-slide-heading {
+    line-height: 1;
+}
+
+.swiper-slide-inner, .elementor-slides .swiper-slide-inner:hover {
+    color: #fff;
+    display: flex;
+}
+
+.swiper-slide-inner:hover {
+    color: #fff;
+    display: flex;
+}
+
+.swiper-slide-inner {
+    text-align: center;
+}
+
+ .elementor-background-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.elementor-slide-description{
+    font-size: 28px;
+}

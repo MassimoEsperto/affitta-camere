@@ -4,15 +4,24 @@ import { MgFooterComponent } from '../componenti/sezioni/mg-footer/mg-footer.com
 import { MgHeaderComponent } from '../componenti/sezioni/mg-header/mg-header.component';
 import { MgMobileNavComponent } from '../componenti/sezioni/mg-mobile-nav/mg-mobile-nav.component';
 import { HomePageComponent } from '../pagine/home-page/home-page.component';
+import { NgwWowService } from 'ngx-wow';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,MgFooterComponent,MgHeaderComponent,MgMobileNavComponent,HomePageComponent],
+  imports: [
+    RouterOutlet,
+    MgFooterComponent,
+    MgHeaderComponent,
+    MgMobileNavComponent,
+    HomePageComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'affitta-camere';
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
 }

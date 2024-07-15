@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/padding.scss';
+@import 'assets/scss/margin.scss';
+
+
+
+.copertina {
+    background-image: url(assets/img/copertna.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+$colore-base : #d0c5b9;    
+.bg-base {
+    background-color: $colore-base;
+}
+.top-45{
+    top: -45px;
+    background-color: $colore-base;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.nascosto{
+    top: -120px;
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    right: 12px;
+    bottom: 80px;
+    z-index: 90;
+}

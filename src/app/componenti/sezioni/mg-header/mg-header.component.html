@@ -1,1 +1,22 @@
-<p>mg-header works!</p>
+<!-- Navbar Start -->
+<div class="container-fluid fixed-top px-0 wow fadeIn"
+    [ngClass]="{'top-45': posizione === 1,'bg-base shadow': posizione === 2,'nascosto': posizione === 3 }"
+    data-wow-delay="0.1s">
+
+    <div>
+
+        <div class="header-comp">
+
+            <div class="cursore" routerLink="/home">
+                <img class="img-fluid" style="width: 60px;" src="../../../../assets/img/logo.png" alt="logo"
+                    class="logo">
+            </div>
+            <div>
+                <menu-laterale></menu-laterale>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Navbar End -->
+    <back-to-top *ngIf="posizione!=0"></back-to-top>
