@@ -39,3 +39,16 @@ $colore-base : #d0c5b9;
     bottom: 80px;
     z-index: 90;
 }
+
+.camera-2{
+    background-image: url(assets/img/camera2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: white;
+}
